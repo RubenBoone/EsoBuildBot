@@ -1,16 +1,12 @@
 import os
 import discord
-import CONFIG
-
-BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
-
 
 def main():
     intents = discord.Intents.default()
     intents.message_content = True
 
     client = Client(intents=intents)
-    client.run(BOT_TOKEN)
+    client.run("a")
 
 
 class Client(discord.Client):
