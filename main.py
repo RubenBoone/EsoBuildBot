@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import discord
 
+
 def main():
     load_dotenv()
     BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
@@ -10,7 +11,7 @@ def main():
     intents.message_content = True
 
     client = Client(intents=intents)
-    client.run("MTExMDcwNDIwMjA1MDcxOTc2NA.GohmC4.AUsy3cPkntO6zIbMuymPM-UMIuc_wmXojBKPks")
+    client.run(BOT_TOKEN)
 
 
 class Client(discord.Client):
