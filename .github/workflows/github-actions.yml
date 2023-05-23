@@ -4,9 +4,9 @@ on: [push]
 jobs:
   Starting-discord-bot:
     runs-on: ubuntu-latest
+    env:
+      DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
     steps:
-      - env:
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
       - uses: actions/checkout@v2
       - run: echo "Install discord.py"
       - run: pip install -U discord.py
