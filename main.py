@@ -1,6 +1,5 @@
 import os
 import discord
-import CONFIG
 
 BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
 
