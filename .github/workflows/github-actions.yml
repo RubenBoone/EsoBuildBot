@@ -10,5 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "Install discord.py"
       - run: pip install -U discord.py
+      - run: echo "Install dotenv"
+      - run: pip install python-dotenv
       - run: echo "Starting python script"
       - run: python3 main.py
