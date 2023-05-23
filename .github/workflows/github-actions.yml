@@ -1,12 +1,12 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-env:
-  DISCOR_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
 jobs:
   Starting-discord-bot:
     runs-on: ubuntu-latest
     steps:
+      - env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
       - uses: actions/checkout@v2
       - run: echo "Install discord.py"
       - run: pip install -U discord.py
