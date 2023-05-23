@@ -8,5 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Starting python script"
-      - run: ls
-      - run: python3 main.py
+      - run: python3 ../main.py
