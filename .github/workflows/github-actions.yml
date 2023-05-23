@@ -1,0 +1,4 @@
+- name: EsoBuildBot
+  env:
+    DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+  run: |
