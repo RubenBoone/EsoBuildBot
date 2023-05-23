@@ -7,5 +7,8 @@ jobs:
   Starting-discord-bot:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - run: echo "Install discord.py"
+      - run: pip install -U discord.py
       - run: echo "Starting python script"
-      - run: python3 /EsoBuildBot/main.py
+      - run: python3 main.py
