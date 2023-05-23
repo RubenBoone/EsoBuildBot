@@ -4,7 +4,7 @@ on: [push]
 env:
   DISCOR_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
 jobs:
-  Starting discord bot:
+  Starting-discord-bot:
     runs-on: ubuntu-latest
     steps:
       - run: Starting script"
