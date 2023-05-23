@@ -7,5 +7,5 @@ jobs:
   Starting-discord-bot:
     runs-on: ubuntu-latest
     steps:
-      - run: Starting script"
+      - run: echo "Starting python script"
       - run: python3 main.py
